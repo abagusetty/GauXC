@@ -99,6 +99,7 @@ jobs:
                  -B${{runner.workspace}}/cmake_subproject_build 
                  -DGAUXC_ENABLE_MPI=${{matrix.mpi_flag}}
                  -DGAUXC_ENABLE_SYCL=OFF
+                 -DGITHUB_REPOSITORY=$GITHUB_ACTOR/GauXC
                  -DGIT_REVISION=$GITHUB_HEAD_REF 
                  -DCMAKE_TOOLCHAIN_FILE=${GITHUB_WORKSPACE}/${GH_ACTIONS_TOOLCHAIN}
 
